@@ -2,7 +2,7 @@
 
 ## Purpose
 
-This pallet allows for magical art be conjured by witches/wizards/elves/other magical creatures, and be traded and collected by muggles/no-maj and other communities between different planets.  Unlike [conjuration]i(https://harrypotter.fandom.com/wiki/Conjuration) one might have learnt, the artwork conjured in this pallet will not reversely transfigurable, according to the muggle's study of cryptographic immutibility.
+This pallet allows for magical art be conjured by witches/wizards/elves/other magical creatures, and be traded and collected by muggles/no-maj and other communities between different planets.  Unlike [conjuration](https://harrypotter.fandom.com/wiki/Conjuration) one might have learnt, the artwork conjured in this pallet will not reversely transfigurable, according to the muggle's study of cryptographic immutibility.
 ## Dependencies
 
 This pallet depends on [substrate-ipfs]() for interplanetary storage 
