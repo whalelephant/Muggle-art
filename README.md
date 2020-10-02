@@ -1,18 +1,11 @@
-# Substrate Pallet Template
-
-This is a template for a Substrate pallet which lives as its own crate so it can be imported into multiple runtimes. It is based on the ["template" pallet](https://github.com/paritytech/substrate/tree/master/bin/node-template/pallets/template) that is included with the [Substrate node template](https://github.com/paritytech/substrate/tree/master/bin/node-template).
-
-Check out the [HOWTO](HOWTO.md) to learn how to use this for your own runtime module.
-
-This README should act as a general template for distributing your pallet to others.
+# FRAME pallet for trading magical artwork
 
 ## Purpose
 
-This pallet acts as a template for building other pallets.
-
-It currently allows a user to put a `u32` value into storage, which triggers a runtime event.
-
+This pallet allows for magical art be conjured by witches/wizards/elves/other magical creatures, and be traded and collected by muggles/no-maj and other communities between different planets.  Unlike [conjuration]i(https://harrypotter.fandom.com/wiki/Conjuration) one might have learnt, the artwork conjured in this pallet will not reversely transfigurable, according to the muggle's study of cryptographic immutibility.
 ## Dependencies
+
+This pallet depends on [substrate-ipfs]() for interplanetary storage 
 
 ### Traits
 
@@ -20,7 +13,7 @@ This pallet does not depend on any externally defined traits.
 
 ### Pallets
 
-This pallet does not depend on any other FRAME pallet or externally developed modules.
+This pallet [pallet-nft](https://github.com/danforbes/pallet-nft) for the tokenization of the non-fungible nature of the art work.
 
 ## Installation
 
@@ -29,9 +22,9 @@ This pallet does not depend on any other FRAME pallet or externally developed mo
 To add this pallet to your runtime, simply include the following to your runtime's `Cargo.toml` file:
 
 ```TOML
-[dependencies.substrate-pallet-template]
+[dependencies.mugwort-art]
 default_features = false
-git = 'https://github.com/substrate-developer-hub/substrate-pallet-template.git'
+git = 'https://github.com/whalelephant/mugwort-art.git'
 ```
 
 and update your runtime's `std` feature to include this pallet:
@@ -39,7 +32,7 @@ and update your runtime's `std` feature to include this pallet:
 ```TOML
 std = [
     # --snip--
-    'example_pallet/std',
+    'mugwort-art/std',
 ]
 ```
 
@@ -62,7 +55,7 @@ ExamplePallet: substrate_pallet_template::{Module, Call, Storage, Event<T>},
 
 ### Genesis Configuration
 
-This template pallet does not have any genesis configuration.
+// TODO 
 
 ## Reference Docs
 
@@ -72,4 +65,3 @@ You can view the reference docs for this pallet by running:
 cargo doc --open
 ```
 
-or by visiting this site: <Add Your Link>
